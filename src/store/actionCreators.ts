@@ -12,7 +12,7 @@ export function updateArgs(args: IArgs,prop: string,value: string) {
     return funcAction(action);
   }
 
-  //Добавление элемента в узил
+  //Добавление элемента в узeл
   export function pushChild(args: IArgs,prop: string,value: IArgs) {
     const action: ArgsAction = {
       type: actionTypes.ADD_CHILD,
