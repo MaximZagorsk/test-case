@@ -5,14 +5,14 @@ const initialState: ArgsState = {
     {
       name: "Name1",
       id: "1",
-      discription: "discription1",
+      description: "description1",
       property: "property1",
       skill: "skill1",
       nodes: [
         {
           name: "Name2",
           id: "2",
-          discription: "discription2",
+          description: "description2",
           property: "property2",
           skill: "skill2",
           nodes: [],
@@ -21,14 +21,14 @@ const initialState: ArgsState = {
         {
           name: "Name3",
           id: "3",
-          discription: "discription3",
+          description: "description3",
           property: "property3",
           skill: "skill3",
           nodes: [
             {
               name: "Name4",
               id: "4",
-              discription: "discription4",
+              description: "description4",
               property: "property4",
               skill: "skill4",
               nodes: [],

@@ -102,7 +102,7 @@ const ItemViewComp = (props) => {
     reValidateMode: "onChange",
     defaultValues: {
       name: arg.name,
-      discription: arg.discription,
+      description: arg.description,
       property: arg.property,
       skill: arg.skill,
     },
@@ -111,7 +111,7 @@ const ItemViewComp = (props) => {
   // useEffect для обновления значений в component`e
   React.useEffect(() => {
     setValue("name", arg.name);
-    setValue("discription", arg.discription);
+    setValue("description", arg.description);
     setValue("property", arg.property);
     setValue("skill", arg.skill);
   }, [arg]);
@@ -159,7 +159,7 @@ const ItemViewComp = (props) => {
 
   const handleButtonSave = () => {
     saveArgs(arg, "name", getValues("name"));
-    saveArgs(arg, "discription", getValues("discription"));
+    saveArgs(arg, "description", getValues("description"));
     saveArgs(arg, "property", getValues("property"));
     saveArgs(arg, "skill", getValues("skill"));
     if (childItem) {
@@ -186,7 +186,7 @@ const ItemViewComp = (props) => {
       <TabPanel value={value} index={0}>
         <div className="box-cs">
           <TextFieldFunc name={"Name"} propVal={"name"} />
-          <TextFieldFunc name={"Discription"} propVal={"discription"} />
+          <TextFieldFunc name={"Description"} propVal={"description"} />
           <span className="box-cs button-cs">
             Загрузить элемент
             <input

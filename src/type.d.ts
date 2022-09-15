@@ -1,6 +1,6 @@
 interface IArgs {
     name: String;
-    discription: String;
+    description: String;
     property: String;
     skill: String
     id: string;
